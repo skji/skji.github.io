@@ -9,6 +9,7 @@ production_url : http://skji.github.co
 description: "Somethings by Shankai Ji."
 disqus_shortname: skjiblog
 analytics: UA-47846061-1
+gauges: 52f36bdf92c6ac4a7b0008e0
 author :
   name : Shankai Ji
   github : skji
