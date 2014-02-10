@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Snow"
+category: posts
+---
+
 很喜欢Chrome的应用商店，经常在里面发现各种自己用的上的神器。
 
 最近开始稳定更新Github上自己的blog，但由于一些设置问题,emacs并不能很好的支持中文或日文的编辑,对markdown语法的不熟悉也限制了自己效率。Chrome应用商店里的[StackEdit][1]可以较好的解决我的问题，而且他的即时预览对于文章编辑帮助很大,这点是emacs不能很好支持的。
