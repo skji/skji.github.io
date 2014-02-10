@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Snow"
+title: "使用StackEdit更新Github个人博客"
 category: posts
 ---
 
