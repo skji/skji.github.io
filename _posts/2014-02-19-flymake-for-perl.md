@@ -7,7 +7,7 @@ Flymake应该成为emacs或vim的标配,该工具可以很方便的找出代码�
 
 首先需要去下载个set-perl5lib.el, 地址[点我][1],将它放在你的emacs的loadpath里. 然后将下列代码加到emacs的配置文件.
 
-```
+{% highlight lisp %}
 ;; flymake (Emacs22から標準添付されている)
 (require 'flymake)
 
@@ -69,7 +69,7 @@ Flymake应该成为emacs或vim的标配,该工具可以很方便的找出代码�
   (flymake-mode t))
 
 (add-hook 'cperl-mode-hook 'flymake-perl-load)
-```
+{% endhighlight %}
 
 以上,大功告成.
 
