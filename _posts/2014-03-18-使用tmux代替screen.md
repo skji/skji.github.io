@@ -21,38 +21,49 @@ category: posts
  
 ###Tmux Setting###
 从 screen 切换到 tmux 十分平滑，tmux 的按键设置与 screen 大都相同，只是其默认按键前缀为 ctrl-b。为了延续在 screen 中的使用习惯，我将其更改为 ctrl-a。将下列内容加到 $HOME/.tmux.conf 中即可：
+
 ```
 set -g prefix ^a
 unbind ^b
 bind a send-prefix
 ```
+
 ####按键绑定####
 
 - 水平或垂直分割窗口
+
 ```
 unbind '"'
 bind - splitw -v # 分割成上下两个窗口
 unbind %
 bind | splitw -h # 分割成左右两个窗口
 ```
+
 - 选择分割的窗格
+
 ```
 bind k selectp -U # 选择上窗格
 bind j selectp -D # 选择下窗格
 bind h selectp -L # 选择左窗格
 bind l selectp -R # 选择右窗格
 ```
+
 - 交换两个窗格
+
 ```
 bind ^u swapp -U # 与上窗格交换 Ctrl-u
 bind ^d swapp -D # 与下窗格交换 Ctrl-d
 ```
+
 - 定制状态行
 状态行左边默认就很好了，我对右边定制了一下，显示 uptime 和 loadavg：
+
 ```
 set -g status-right "#[fg=green]#(uptime.pl)#[default] • #[fg=green]#(cut -d ' ' -f 1-3 /proc/loadavg)#[default]"
 ```
+
 下面两行设置状态行的背景和前景色:
+
 ```
 set -g status-bg black
 set -g status-fg yellow
