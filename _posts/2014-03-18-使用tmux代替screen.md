@@ -22,11 +22,13 @@ category: posts
 ###Tmux Setting###
 从 screen 切换到 tmux 十分平滑，tmux 的按键设置与 screen 大都相同，只是其默认按键前缀为 ctrl-b。为了延续在 screen 中的使用习惯，我将其更改为 ctrl-a。将下列内容加到 $HOME/.tmux.conf 中即可：
 
-[% highlight bash %]
+
+
+{% highlight bash %}
 set -g prefix ^a
 unbind ^b
 bind a send-prefix
-[% endhighlight %]
+{% endhighlight %}
 
 ####按键绑定####
 
@@ -56,6 +58,7 @@ bind ^d swapp -D # 与下窗格交换 Ctrl-d
 ```
 
 - 定制状态行
+
 状态行左边默认就很好了，我对右边定制了一下，显示 uptime 和 loadavg：
 
 ```
