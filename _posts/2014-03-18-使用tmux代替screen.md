@@ -34,46 +34,46 @@ bind a send-prefix
 
 - 水平或垂直分割窗口
 
-```
+{% highlight bash %}
 unbind '"'
 bind - splitw -v # 分割成上下两个窗口
 unbind %
 bind | splitw -h # 分割成左右两个窗口
-```
+{% endhighlight %}
 
 - 选择分割的窗格
 
-```
+{% highlight bash %}
 bind k selectp -U # 选择上窗格
 bind j selectp -D # 选择下窗格
 bind h selectp -L # 选择左窗格
 bind l selectp -R # 选择右窗格
-```
+{% endhighlight %}
 
 - 交换两个窗格
 
-```
+{% highlight bash %}
 bind ^u swapp -U # 与上窗格交换 Ctrl-u
 bind ^d swapp -D # 与下窗格交换 Ctrl-d
-```
+{% endhighlight %}
 
 - 定制状态行
 
 状态行左边默认就很好了，我对右边定制了一下，显示 uptime 和 loadavg：
 
-```
+{% highlight bash %}
 set -g status-right "#[fg=green]#(uptime.pl)#[default] • #[fg=green]#(cut -d ' ' -f 1-3 /proc/loadavg)#[default]"
-```
+{% endhighlight %}
 
 下面两行设置状态行的背景和前景色:
 
-```
+{% highlight bash %}
 set -g status-bg black
 set -g status-fg yellow
-```
+{% endhighlight %}
 
 ###Common Commands###
-```
+{% highlight bash %}
 C-a d   //返回主 shell ， tmux 依旧在后台运行，里面的命令也保持运行状态tmux attach 
 C-a ?  // 显示快捷键帮助
 C-a C-o  //调换窗口位置
@@ -96,5 +96,5 @@ C-a p // 选择前一个窗口
 C-a w // 以菜单方式显示及选择窗口
 C-a s // 以菜单方式显示和选择会话
 C-a t //显示时钟
-```
+{% endhighlight %}
 
