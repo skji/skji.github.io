@@ -1,4 +1,3 @@
-pygments: true
 highlighter: rouge
 permalink: /posts/:title
 rdiscount:
@@ -14,4 +13,5 @@ author :
   name : Shankai Ji
   github : skji
   twitter : jishankai
+  linkedin: jishankai
   email: jishankai@qq.com
