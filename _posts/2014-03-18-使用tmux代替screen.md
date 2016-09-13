@@ -8,7 +8,9 @@ category: posts
 
 
 ----------
-###Why Tmux###
+
+### Why Tmux
+
 **tmux**是和**screen**类似的一款工具,相比**screen**,**tmux**更加方便、灵活和高效:
 
  - 垂直or水平分割窗口
@@ -19,7 +21,8 @@ category: posts
  - 有预设布局，可搜索窗口，自动命名窗口名称
  - 文档清晰、详尽
  
-###Tmux Setting###
+### Tmux Setting
+
 从 screen 切换到 tmux 十分平滑，tmux 的按键设置与 screen 大都相同，只是其默认按键前缀为 ctrl-b。为了延续在 screen 中的使用习惯，我将其更改为 ctrl-a。将下列内容加到 $HOME/.tmux.conf 中即可：
 
 
@@ -30,7 +33,7 @@ unbind ^b
 bind a send-prefix
 {% endhighlight %}
 
-####按键绑定####
+#### 按键绑定
 
 - 水平或垂直分割窗口
 
@@ -72,7 +75,7 @@ set -g status-bg black
 set -g status-fg yellow
 {% endhighlight %}
 
-###Common Commands###
+### Common Commands
 {% highlight bash %}
 C-a d   //返回主 shell ， tmux 依旧在后台运行，里面的命令也保持运行状态tmux attach 
 C-a ?  // 显示快捷键帮助
