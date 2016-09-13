@@ -5,7 +5,7 @@ rdiscount:
   extensions: [smart]
 exclude: [ Gemfile, Gemfile.lock, gems, _assets, bower_components ]
 title : Shankai Ji
-production_url : http://skji.github.co
+production_url : http://jishankai.cn
 description: "Somethings by Shankai Ji."
 disqus_shortname: skjiblog
 analytics: UA-47846061-1
@@ -14,4 +14,4 @@ author :
   name : Shankai Ji
   github : skji
   twitter : jishankai
-  email: jishankai@gmail.com
+  email: jishankai@qq.com
